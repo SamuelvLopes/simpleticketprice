@@ -4,7 +4,7 @@
     },
     "require-dev": {
         "glpi-project/tools": "^0.4",
-        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan": "^2.1",
         "phpmd/phpmd": "^2.13",
         "friendsofphp/php-cs-fixer": "^3.52"
     },
