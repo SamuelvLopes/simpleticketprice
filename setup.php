@@ -54,7 +54,7 @@ function plugin_init_simpleticketprice()
  * Get the name and the version of the plugin
  * REQUIRED
  *
- * @return array
+ * @return array<string, mixed>
  */
 function plugin_version_simpleticketprice()
 {
@@ -93,12 +93,12 @@ function plugin_simpleticketprice_check_prerequisites()
  */
 function plugin_simpleticketprice_check_config($verbose = false)
 {
-    if (true) { // Your configuration check
+  //  if (true) { // Your configuration check
         return true;
-    }
+   // }
 
-    if ($verbose) {
-        echo __('Installed / not configured', 'simpleticketprice');
-    }
-    return false;
+   // if ($verbose) {
+   //     echo __('Installed / not configured', 'simpleticketprice');
+   // }
+  //  return false;
 }
