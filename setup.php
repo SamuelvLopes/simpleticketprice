@@ -96,12 +96,5 @@ function plugin_simpleticketprice_check_prerequisites()
  */
 function plugin_simpleticketprice_check_config($verbose = false)
 {
-  //  if (true) { // Your configuration check
     return $verbose;
-   // }
-
-   // if ($verbose) {
-   //     echo __('Installed / not configured', 'simpleticketprice');
-   // }
-  //  return false;
 }
