@@ -40,6 +40,7 @@ define("PLUGIN_SIMPLETICKETPRICE_MAX_GLPI_VERSION", "10.0.99");
  * Init hooks of the plugin.
  * REQUIRED
  *
+ * @phpmd suppress CamelCaseVariableName
  * @return void
  */
 function plugin_init_simpleticketprice()
@@ -54,7 +55,7 @@ function plugin_init_simpleticketprice()
  * Get the name and the version of the plugin
  * REQUIRED
  *
- * @return array
+ * @return array<string, mixed>
  */
 function plugin_version_simpleticketprice()
 {
@@ -90,15 +91,10 @@ function plugin_simpleticketprice_check_prerequisites()
  * @param boolean $verbose Whether to display message on failure. Defaults to false
  *
  * @return boolean
+ *
+ * @phpmd suppress BooleanArgumentFlag
  */
 function plugin_simpleticketprice_check_config($verbose = false)
 {
-    if (true) { // Your configuration check
-        return true;
-    }
-
-    if ($verbose) {
-        echo __('Installed / not configured', 'simpleticketprice');
-    }
-    return false;
+    return $verbose;
 }
