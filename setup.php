@@ -94,7 +94,7 @@ function plugin_simpleticketprice_check_prerequisites()
  *
  * @phpmd suppress BooleanArgumentFlag
  */
-function plugin_simpleticketprice_check_config($verbose = false)
+function plugin_simpleticketprice_check_config($_verbose = false)
 {
-    return $verbose?true:!false;
+    return true;
 }
