@@ -7,7 +7,6 @@ Para mais informações e suporte, entre em contato pelo meu [LinkedIn](https://
 ## Exemplo de Utilização
 [Exemplo de Utilização](https://github.com/user-attachments/assets/23b3340e-ef7e-41a2-8b20-59b99c2f8eac)
 
-
 ## Contributing
 
 * Open a ticket for each bug/feature so it can be discussed
