@@ -30,21 +30,43 @@
  */
 
 /**
- * Plugin install process
+ * Função de instalação do plugin TicketPrice.
+ * Cria a tabela necessária para armazenar preços associados aos tickets.
  *
- * @return boolean
+ * @return bool true em caso de sucesso, false em caso contrário.
  */
-function plugin_simpleticketprice_install()
-{
+function plugin_simpleticketprice_install() {
+    global $DB;
+
+    if (!$DB->tableExists('glpi_plugin_ticketprice_tickets')) {
+        $query = "CREATE TABLE `glpi_plugin_ticketprice_tickets` (
+                    `id` INT AUTO_INCREMENT PRIMARY KEY,
+                    `tickets_id` INT NOT NULL UNIQUE,
+                    `price` DECIMAL(10,2) NOT NULL
+                  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;";
+
+        if (!$DB->query($query)) {
+            return false;
+        }
+    }
+
     return true;
 }
 
 /**
- * Plugin uninstall process
+ * Função de desinstalação do plugin TicketPrice.
+ * Remove a tabela criada pelo plugin do banco de dados.
  *
- * @return boolean
+ * @return bool true em caso de sucesso, false em caso contrário.
  */
-function plugin_simpleticketprice_uninstall()
-{
+function plugin_simpleticketprice_uninstall() {
+    global $DB;
+
+    if ($DB->tableExists('glpi_plugin_ticketprice_tickets')) {
+        if (!$DB->query("DROP TABLE `glpi_plugin_ticketprice_tickets`;")) {
+            return false;
+        }
+    }
+
     return true;
 }

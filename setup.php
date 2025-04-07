@@ -62,7 +62,7 @@ function plugin_version_simpleticketprice()
     return [
         'name'           => 'SimpleTicketPrice',
         'version'        => PLUGIN_SIMPLETICKETPRICE_VERSION,
-        'author'         => '<a href="http://www.teclib.com">Teclib\'</a>',
+        'author'         => '<a href="https://www.linkedin.com/in/samuel-vitor-lopes/">Samuel Lopes</a>',
         'license'        => '',
         'homepage'       => '',
         'requirements'   => [
@@ -96,5 +96,5 @@ function plugin_simpleticketprice_check_prerequisites()
  */
 function plugin_simpleticketprice_check_config($verbose = false)
 {
-    return $verbose;
+    return true;
 }
