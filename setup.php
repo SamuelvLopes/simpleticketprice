@@ -94,7 +94,7 @@ function plugin_simpleticketprice_check_prerequisites()
 function plugin_simpleticketprice_check_config($verbose = false)
 {
   //  if (true) { // Your configuration check
-        return true;
+        return $verbose;
    // }
 
    // if ($verbose) {
