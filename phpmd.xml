@@ -3,20 +3,20 @@
          xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
-         http://pmd.sourceforge.net/ruleset_2_0_0.xsd"
-         xmlns:fn="http://www.w3.org/2005/xpath-functions">
+         http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
 
     <description>Custom ruleset for SimpleTicketPrice plugin</description>
 
-    <!-- Import default rules -->
-    <rule ref="rulesets/cleancode.xml" />
+    
+    <rule ref="rulesets/cleancode.xml">
+        <exclude name="BooleanArgumentFlag" />
+    </rule>
+
     <rule ref="rulesets/codesize.xml" />
-    <rule ref="rulesets/controversial.xml" />
+    <rule ref="rulesets/controversial.xml">
+        <exclude name="CamelCaseVariableName" />
+    </rule>
     <rule ref="rulesets/design.xml" />
     <rule ref="rulesets/naming.xml" />
     <rule ref="rulesets/unusedcode.xml" />
-
-    <!-- Suppress specific rules for GLPI compatibility -->
-    <exclude-pattern>.*\$PLUGIN_HOOKS.*</exclude-pattern>
-    <exclude name="BooleanArgumentFlag" />
 </ruleset>
