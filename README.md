@@ -5,8 +5,8 @@ O SimpleTicketPrice é um plugin para o GLPI que facilita a visualização dos c
 Para mais informações e suporte, entre em contato pelo meu [LinkedIn](https://www.linkedin.com/in/samuel-vitor-lopes/).
 
 ## Exemplo de Utilização
+[Gravação de tela de 2025-04-07 03-59-13.webm](https://github.com/user-attachments/assets/23b3340e-ef7e-41a2-8b20-59b99c2f8eac)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3nRT5slFzts" title="Exemplo de utilização do SimpleTicketPrice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Contributing
 
