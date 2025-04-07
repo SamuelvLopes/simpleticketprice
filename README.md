@@ -1,6 +1,12 @@
-# SimpleTicketPrice GLPI plugin
+# SimpleTicketPrice GLPI Plugin
 
-Add your plugin description here.
+O SimpleTicketPrice é um plugin para o GLPI que facilita a visualização dos custos associados às demandas. Ele integra informações financeiras de forma clara e intuitiva, permitindo que os usuários acompanhem e gerenciem os gastos com tickets de maneira mais eficiente.
+
+Para mais informações e suporte, entre em contato pelo meu [LinkedIn](https://www.linkedin.com/in/samuel-vitor-lopes/).
+
+## Exemplo de Utilização
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3nRT5slFzts" title="Exemplo de utilização do SimpleTicketPrice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Contributing
 
