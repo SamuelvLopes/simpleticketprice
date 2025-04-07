@@ -1,4 +1,5 @@
 <?php
+
 function plugin_simpleticketprice_install(): bool 
 {
     global $DB;
@@ -70,8 +71,6 @@ function plugin_simpleticketprice_item_form(array $params): void
     }
 }
 
-
-
 function plugin_simpleticketprice_pre_item_add_itilsolution(ITILSolution $solution) 
 {
     if (!empty($solution->input['content'])) {
@@ -88,7 +87,6 @@ function plugin_simpleticketprice_pre_item_add_itilsolution(ITILSolution $soluti
         }
     }
 }
-
 
 function plugin_simpleticketprice_item_update($item)
 {
