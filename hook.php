@@ -1,5 +1,5 @@
 <?php
-function plugin_simpleticketprice_install()
+function plugin_simpleticketprice_install(): bool 
 {
     global $DB;
 
@@ -10,7 +10,7 @@ function plugin_simpleticketprice_install()
     return true;
 }
 
-function plugin_simpleticketprice_uninstall()
+function plugin_simpleticketprice_uninstall(): bool 
 {
     global $DB;
 
@@ -21,7 +21,7 @@ function plugin_simpleticketprice_uninstall()
     return true;
 }
 
-function plugin_simpleticketprice_item_form(array $params)
+function plugin_simpleticketprice_item_form(array $params): void
 {
     if ($params['item'] instanceof Ticket) {
         global $CFG_GLPI;
@@ -72,7 +72,8 @@ function plugin_simpleticketprice_item_form(array $params)
 
 
 
-function plugin_simpleticketprice_pre_item_add_itilsolution(ITILSolution $solution) {
+function plugin_simpleticketprice_pre_item_add_itilsolution(ITILSolution $solution) 
+{
     if (!empty($solution->input['content'])) {
         $ticket = new Ticket();
         if ($ticket->getFromDB($solution->fields['items_id'])) {
