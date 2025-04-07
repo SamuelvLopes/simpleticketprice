@@ -35,7 +35,8 @@
  *
  * @return bool true em caso de sucesso, false em caso contrário.
  */
-function plugin_simpleticketprice_install() {
+function plugin_simpleticketprice_install()
+{
     global $DB;
 
     if (!$DB->tableExists('glpi_plugin_ticketprice_tickets')) {
@@ -59,7 +60,8 @@ function plugin_simpleticketprice_install() {
  *
  * @return bool true em caso de sucesso, false em caso contrário.
  */
-function plugin_simpleticketprice_uninstall() {
+function plugin_simpleticketprice_uninstall()
+{
     global $DB;
 
     if ($DB->tableExists('glpi_plugin_ticketprice_tickets')) {
