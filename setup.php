@@ -91,7 +91,7 @@ function plugin_simpleticketprice_check_prerequisites()
  * @param boolean $verbose Whether to display message on failure. Defaults to false
  *
  * @return boolean
- * 
+ *
  * @phpmd suppress BooleanArgumentFlag
  */
 function plugin_simpleticketprice_check_config($verbose = false)
